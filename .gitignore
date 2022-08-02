@@ -1,0 +1,8 @@
+*.xml
+selenium_java_course.iml
+/out/production/selenium_java_course/CustomScanner.class
+/out/production/selenium_java_course/HelloPage.class
+/out/production/selenium_java_course/InkrementacjaDekrementacja.class
+/out/production/selenium_java_course/Maps.class
+/out/production/selenium_java_course/OperatoryMatematyczne.class
+/out/production/selenium_java_course/Zmienne.class
