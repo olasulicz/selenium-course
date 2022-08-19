@@ -2,12 +2,17 @@ public class StudentChecker {
 
     public static void main(String[] args) {
 
+        String uczelnia = Student.nazwaUczelni;
+        Student.infoUczelnia();
+
         Student pierwszyStudent = new Student();
         pierwszyStudent.email = "anna@gmail.com";
         pierwszyStudent.indeksNumber = 1234;
         pierwszyStudent.name = "Anna";
         pierwszyStudent.surname = "Kowalska";
         pierwszyStudent.nick = "AnnaK";
+        String uczelniaPierwszegoStudenta = pierwszyStudent.nazwaUczelni;
+        pierwszyStudent.infoUczelnia();// wywołanie metody statycznej - nie rekomendowany sposob
 
         Student drugiStudent = new Student();
         drugiStudent.email = "kasia@gmail.com";
@@ -23,17 +28,16 @@ public class StudentChecker {
         trzeciStudent.surname = "Kwiatek";
         trzeciStudent.nick = "JanK";
 
-        Student[] Studenci = new Student[3];
-        Studenci[0] = pierwszyStudent;
-        Studenci[1] = drugiStudent;
-        Studenci[2] = trzeciStudent;
+        Student[] studenci = new Student[3];
+        studenci[0] = pierwszyStudent;
+        studenci[1] = drugiStudent;
+        studenci[2] = trzeciStudent;
 
-        for (int i = 0; i < Studenci.length; i++){
-            Studenci[i].introduceYourself();
-            Studenci[i].giveIndeksNumber();
-            Studenci[i].giveEmail();
-            Studenci[i].login();
-
+        for (int i = 0; i < studenci.length; i++){
+            studenci[i].introduceYourself();
+            studenci[i].giveIndeksNumber();
+            studenci[i].giveEmail();
+            studenci[i].login();
         }
     }
 }
