@@ -12,7 +12,8 @@ public class MathTeacher extends Person {
         System.out.println("I'm teaching Math!");
     }
 
-    public void walk() {
+    public void walk() { // metoda nadpisana
+        super.walk();
         System.out.println("I walk very fast!");
     }
     public void sayHello(){

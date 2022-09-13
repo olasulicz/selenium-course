@@ -5,14 +5,7 @@ public class StudentChecker {
         String uczelnia = Student.nazwaUczelni;
         Student.infoUczelnia();
 
-        Student pierwszyStudent = new Student();
-        pierwszyStudent.email = "anna@gmail.com";
-        pierwszyStudent.indeksNumber = 1234;
-        pierwszyStudent.name = "Anna";
-        pierwszyStudent.surname = "Kowalska";
-        pierwszyStudent.nick = "AnnaK";
-        String uczelniaPierwszegoStudenta = pierwszyStudent.nazwaUczelni;
-        pierwszyStudent.infoUczelnia();// wywołanie metody statycznej - nie rekomendowany sposob
+
 
         Student drugiStudent = new Student();
         drugiStudent.email = "kasia@gmail.com";
@@ -27,6 +20,15 @@ public class StudentChecker {
         trzeciStudent.name = "Jan";
         trzeciStudent.surname = "Kwiatek";
         trzeciStudent.nick = "JanK";
+
+        Student pierwszyStudent = new Student();
+        pierwszyStudent.email = "anna@gmail.com";
+        pierwszyStudent.indeksNumber = 1234;
+        pierwszyStudent.name = "Anna";
+        pierwszyStudent.surname = "Kowalska";
+        pierwszyStudent.nick = "AnnaK";
+        String uczelniaPierwszegoStudenta = pierwszyStudent.nazwaUczelni;
+        pierwszyStudent.infoUczelnia();// wywołanie metody statycznej - nie rekomendowany sposob
 
         Student[] studenci = new Student[3];
         studenci[0] = pierwszyStudent;
